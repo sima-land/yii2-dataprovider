@@ -1,21 +1,22 @@
 {
-    "name": "sima-land/yii2-dataprovider",
-    "description": "DataProvider components for split query result on pages",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Chernoskutov Pavel",
-            "email": "chernoskutov@sima-land.ru"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": ">=5.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "SimaLand\\Data\\": "src"
-        }
+  "name": "sima-land/yii2-dataprovider",
+  "description": "DataProvider components for split query result on pages",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chernoskutov Pavel",
+      "email": "chernoskutov@sima-land.ru"
     }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4",
+    "yiisoft/yii2": ">=2.0.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SimaLand\\Data\\": "src"
+    }
+  }
 }
