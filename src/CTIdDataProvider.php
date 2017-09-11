@@ -1,6 +1,6 @@
 <?php
 
-namespace common\components;
+namespace SimaLand\Data;
 
 use yii\base\InvalidConfigException;
 use yii\data\ActiveDataProvider;

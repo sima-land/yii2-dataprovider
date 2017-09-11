@@ -1,0 +1,19 @@
+{
+    "name": "sima-land/yii2-dataprovider",
+    "description": "DataProvider components for split query result on pages",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chernoskutov Pavel",
+            "email": "chernoskutov@sima-land.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SimaLand\\Data\\": "src"
+        }
+    }
+}
