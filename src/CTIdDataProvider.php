@@ -22,6 +22,15 @@ use yii\db\QueryInterface;
 class CTIdDataProvider extends ActiveDataProvider
 {
     /**
+     * Название поля CTID в запросе. По-умолчанию носит 'CTID', но
+     * порой в сложных запроск требуется указать и имя таблицы или переименовать
+     * поле.
+     *
+     * @var string
+     */
+    public $ctid = 'ctid'
+
+    /**
      * @var integer $_totalPage Количество страниц в таблице (не в выборке).
      */
     protected $_totalPage;
@@ -43,7 +52,7 @@ class CTIdDataProvider extends ActiveDataProvider
 
         if (($pagination = $this->getPagination()) !== false || $this->pagination->page > $this->getTotalPage()) {
             $query->andWhere([
-                'ctid' => new Expression(
+                $this->ctid => new Expression(
                     'ANY (ARRAY(SELECT (\'(\' || :page || \',\' || s.i || \')\')::tid FROM generate_series(0,current_setting(\'block_size\')::int/4) AS s(i)))'
                 )
             ]);
