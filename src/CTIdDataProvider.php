@@ -28,7 +28,7 @@ class CTIdDataProvider extends ActiveDataProvider
      *
      * @var string
      */
-    public $ctid = 'ctid'
+    public $ctid = 'ctid';
 
     /**
      * @var integer $_totalPage Количество страниц в таблице (не в выборке).
